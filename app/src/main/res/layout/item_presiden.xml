@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/img_item_presiden"
+        android:layout_marginEnd="16dp"
+        tools:src="@android:color/darker_gray"
+        android:layout_marginRight="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/img_item_presiden"
+        android:layout_toRightOf="@+id/img_item_presiden">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_item_name"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/presiden_name"/>
+
+        <TextView
+            android:id="@+id/tx_item_tgl_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:text="@string/presiden_tgl_lahir" />
+
+        <TextView
+            android:id="@+id/tx_item_durasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:text="@string/presiden_durasai" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

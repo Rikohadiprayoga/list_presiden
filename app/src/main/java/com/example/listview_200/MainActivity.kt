@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         list.addAll(detail_presiden.list_presiden)
         showPresidenList()
     }
-
+//untuk menampilkan
     private fun showPresidenList(){
         rvPresiden.layoutManager = LinearLayoutManager(this)
         val List_presiden = list_presiden(list)
